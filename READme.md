@@ -1,15 +1,48 @@
-# 🇵🇰 Pakistan Inflation Survival Dashboard (AI Predictor)
+ Pak Inflation AI 
+The Ultimate Economic Defense Console for Pakistan
+ Project Overview
+Pak Inflation Sovereign AI is a professional-grade financial analytics dashboard and economic advisor. Built during a period of significant economic transition, this tool empowers Pakistani citizens and policymakers to track, forecast, and simulate the impact of inflation on essential commodities.
 
-## Overview
-The **Pakistan Inflation Survival Dashboard** is a data-driven Python application designed to help citizens navigate the economic pressures of inflation. Using historical proxy data representing the Pakistan Bureau of Statistics (PBS) and State Bank of Pakistan (SBP), this tool forecasts the future prices of essential commodities (Wheat, Sugar, Petrol) and utilizes Machine Learning to offer personalized budgeting advice.
+Unlike standard trackers, this console uses Ensemble Machine Learning and is hard-coded with real February 26, 2026, price indices, including the official Rs. 258.17 petrol hike.
 
-## Core Features & ML Integration
-- **AI Price Forecasting (Time Series):** Utilizes Scikit-Learn's `LinearRegression` to analyze 12 months of historical commodity prices and project the trendline for the next 3-6 months.
-- **Budget Survival AI (KMeans Clustering):** Uses unsupervised machine learning (`KMeans`) to cluster a user's monthly budget into distinct risk profiles compared to a synthetic dataset of Pakistani households, generating tailored survival tips.
-- **Interactive Data Visualization:** Implements `plotly.express` for responsive time-series charts and city-wide comparative heatmaps.
-- **Automated Data Management:** If the primary dataset is missing, the system catches the error and generates realistic, randomized proxy data using `numpy`.
+ Key Features
+1.  AI Predictive Engine
+Ensemble Modeling: Uses a weighted average of RandomForestRegressor and GradientBoosting to project prices.
 
-## How to Run the Application
-1. **Prerequisites:** Ensure Python is installed.
-2. **Install Required Libraries:** ```bash
-   pip install streamlit pandas numpy scikit-learn plotly
+Confidence Bands: Displays a 95% statistical confidence interval (the "Uncertainty Zone") to show model reliability.
+
+Seasonality Aware: Automatically adjusts for Ramazan spikes and Wheat harvest dips.
+
+2.  Regional Heat-Map
+Geospatial Analysis: Visualizes price disparities across Karachi, Lahore, Islamabad, Peshawar, Quetta, Multan, and Faisalabad.
+
+Multiplier Logic: Accounts for regional logistics and port handling costs.
+
+3.  Sovereign AI Advisor (Chatbot)
+Context-Aware Bot: A conversational interface that performs live data lookups.
+
+Real-Time Sync: Hard-coded with the Feb 16, 2026, Petroleum Hike and January 5.8% Inflation benchmarks.
+
+4.  Household Shock Simulator
+Economic Stress Testing: Allows families to simulate how a % increase in fuel affects their specific monthly savings.
+
+5.  Macro Trend Archive
+65-Year History: Tracks national CPI from 1960 through the 2023 peak (30.77%) to the 2026 stabilization.
+
+ Technical Stack
+Frontend: Streamlit (Custom CSS-injected Dark Mode with Black Metric Cards).
+
+Data Processing: Pandas & NumPy (Time-series manipulation).
+
+Machine Learning: Scikit-Learn (RandomForest, GradientBoosting, KMeans Clustering).
+
+Visualization: Plotly Express & Graph Objects (Interactive, high-fidelity charts).
+
+📦 Installation & Deployment
+Clone the Repository:
+
+
+👤 Author
+MUHAMMAD USAMA
+AI ENGINEER
+"Empowering Pakistan through Data Literacy."
